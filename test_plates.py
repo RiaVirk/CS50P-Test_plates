@@ -21,7 +21,7 @@ def test_valid3():
     assert is_valid("PI3.123") == False
     assert is_valid("CS50PP") == False
 
-def test_valid2():
+def test_valid4():
     assert is_valid("CS05") == False
     assert is_valid("CS0050") == False
     assert is_valid("CS50") == True
