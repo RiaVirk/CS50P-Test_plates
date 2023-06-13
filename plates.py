@@ -1,5 +1,6 @@
 def main():
-    plate = input("Plate: ")
+    # plate = input("Plate: ")
+    plate = ""
     if is_valid(plate):
         print("Valid")
     else:
@@ -11,11 +12,12 @@ def is_valid(s):
         for i in s:
             if i.isdigit():
                 index = s.index(i)
-                if s[index:].isdigit() and int(i) != 0:
+                if s[index:].isdigit() and i != "0":
                     return True
                 else:
                     return False
         return True
+
     return False
 
 
